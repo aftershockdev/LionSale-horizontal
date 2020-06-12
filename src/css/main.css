@@ -1,0 +1,1128 @@
+@font-face {
+  font-family: "Gilroy Light";
+  src: url("../fonts/Gilroy-Light.woff") format("woff"),
+    url("../fonts/Gilroy-Light.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Gilroy Regular";
+  src: url("../fonts/Gilroy-Regular.woff") format("woff"),
+    url("../fonts/Gilroy-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Gilroy Thin";
+  src: url("../fonts/Gilroy-Thin.woff") format("woff"),
+    url("../fonts/Gilroy-Thin.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url("../fonts/Gilroy-Bold.woff") format("woff"),
+    url("../fonts/Gilroy-Bold.ttf") format("ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy", serif;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*=============================================
+=            first Section            =
+=============================================*/
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  background-attachment: fixed;
+  position: relative;
+  width: 1150vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.modal {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  height: 15px;
+  width: 75px;
+}
+
+.logo-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal .first-line {
+  width: 60px;
+  height: 5px;
+  background: #ffff;
+}
+
+.line {
+  width: 70px;
+  height: 5px;
+  background: #ffff;
+}
+
+.logo {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.nav {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.phone {
+  font-size: 38px;
+  color: #fff;
+  font-family: "Gilroy Light";
+}
+
+.first-content {
+  margin-top: 150px;
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+}
+
+.right-side {
+  position: fixed;
+  left: 800px;
+  top: 50px;
+}
+
+.main-text {
+  font-size: 60px;
+  font-family: "Gilroy Thin";
+  color: #fff;
+  font-weight: 100;
+  opacity: 0.6;
+}
+
+.content-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.scroll-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Gilroy Regular";
+  color: #fff;
+}
+
+.context-text {
+  font-size: 18px;
+  color: #fff;
+  font-family: "Gilroy Light";
+  margin-top: 40px;
+}
+
+.nav-item {
+  position: relative;
+  padding: 30px;
+}
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 16px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.footer-block {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links a {
+  padding: 7px;
+  transition: all .2s ease-in;
+}
+
+.social-links a img:hover {
+  transform: rotate(90deg)
+}
+
+/*=====  End of first Section  ======*/
+
+/*=============================================
+=            Animation block            =
+=============================================*/
+
+.spin-block {
+  margin: 0 auto;
+  position: absolute;
+}
+
+.hello {
+  margin-top: 100px;
+  margin-left: 50px;
+  width: 60px;
+  height: 60px;
+  color: white;
+  font: 3vw/3vw times;
+  top: calc(50% - 3vw);
+}
+
+.circle-svg {
+  animation: rotate 8s linear infinite;
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: calc(50% - 7vw);
+  left: calc(50% - 9vw);
+  overflow: hidden;
+}
+
+.circle-svg:after {
+  display: block;
+  content: "hello";
+}
+
+.circle-text {
+  font: 50px/50px times;
+  letter-spacing: 22.5px;
+  width: 100%;
+  fill: white;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*=====  End of Animation block  ======*/
+
+/*=============================================
+=            Section two            =
+=============================================*/
+
+.slide.two {
+  width: 80vw;
+  background: #ffff;
+  background-position: fixed;
+  position: relative;
+}
+
+.big-letter {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  z-index: 1;
+}
+
+.white-content {
+  width: 760px;
+  height: 460px;
+  margin-top: 200px;
+  position: relative;
+  z-index: 100;
+}
+
+.white-content-small {
+  width: 760px;
+  height: 460px;
+  margin-top: 200px;
+  position: relative;
+  z-index: 100;
+  margin-left: 150px;
+}
+
+.head-text {
+  font-size: 75px;
+  font-family: "Gilroy Thin";
+  color: #2e3339;
+}
+
+.content-item {
+  margin-top: 30px;
+}
+
+.content-item p {
+  font-size: 18px;
+  font-family: "Gilroy Regular";
+  color: #2e3339;
+  height: 10px;
+  width: 850px;
+}
+
+.look-at-all {
+  width: 250px !important;
+  background: #fff;
+  height: 45px;
+  color: #42495a;
+  border: 1px solid #42495a;
+  position: relative;
+  transition: all .2s ease-in;
+  cursor: pointer;
+  outline: none;
+}
+
+.look-at-all:hover {
+  background: #42495a;
+  color: #ffff;
+  border: none;
+  font-family: 'Gilroy Bold';
+}
+
+.look-at-all::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  top: 50%;
+  right: 25px;
+  background-color: #42495a;
+}
+
+.heade-text {
+  margin-top: 200px;
+}
+
+.particle-block {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin-top: 100px;
+}
+
+/*=====  End of Section two  ======*/
+
+/*=============================================
+=            Section Three            =
+=============================================*/
+
+.slide.three {
+  background: #ffff url("../img/girl-one.png") center right no-repeat;
+  position: relative;
+}
+
+.left-side-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(33, 41, 48, 0.9) 1%,
+    rgba(58, 66, 81, 0.9) 100%
+  );
+}
+
+.slide-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(10, 45, 81, 0.7);
+}
+
+.info-people {
+  margin-left: 150px;
+}
+
+.number-info {
+  width: 400px;
+  height: 350px;
+  margin-top: 100px;
+}
+
+.number-info p {
+  font-family: "Gilroy Thin";
+  font-size: 18px;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.arrow {
+  margin-top: 80px;
+  float: right;
+}
+
+.right-btn {
+  position: absolute;
+  bottom: 145px;
+  right: 30%;
+}
+
+.right-btn button {
+  background: inherit;
+  border: 1px solid #fff;
+  color: #fff;
+  position: relative;
+}
+
+.right-btn button::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  top: 50%;
+  right: 25px;
+  background: #fff;
+}
+
+.vertical-text {
+  font-size: 100px;
+  color: #fff;
+  font-family: "Gilroy Thin";
+  writing-mode: tb-rl;
+  transform: rotate(180deg);
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+
+/*=====  End of Section Three  ======*/
+
+/*=============================================
+=            Section Four            =
+=============================================*/
+
+.slide.four {
+  max-width: 1100px;
+  background: #ffff;
+  position: relative;
+}
+
+.white-content-four {
+  width: 760px;
+  height: 460px;
+  margin-top: 200px;
+  position: relative;
+  z-index: 100;
+  margin: 0 auto;
+}
+
+/*=====  End of Section Four  ======*/
+
+/*=============================================
+=            Section Five            =
+=============================================*/
+
+.slide.five {
+  width: 800px;
+  position: relative;
+  background: url("../img/man-two.png") center center no-repeat;
+}
+
+.baffet-block {
+  position: absolute;
+  bottom: 50px;
+  left: 70px;
+  height: auto;
+}
+
+.baffet-text {
+  color: #fff;
+  font-size: 24px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.baffet-name {
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+.baffet {
+  font-size: 18px;
+  color: #fff;
+  font-family: "Gilroy Light";
+  position: relative;
+  padding-left: 25px;
+}
+
+.baffet::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  width: 15px;
+  height: 3px;
+  background-color: #ffff;
+}
+
+/*=====  End of Section Five  ======*/
+
+/*=============================================
+=            Sections           =
+=============================================*/
+
+.slide.six {
+  width: 80vw;
+  background: #ffff;
+  background-position: fixed;
+  position: relative;
+}
+
+#particles-two-js {
+  max-width: 1000px;
+}
+
+.slide.seven {
+  width: 800px;
+  position: relative;
+  background: url("../img/girl-two.png") center center no-repeat;
+}
+
+.slide.eight {
+  width: 80vw;
+  background: #ffff;
+  background-position: fixed;
+  position: relative;
+}
+
+.slide.nine {
+  width: 800px;
+  position: relative;
+  background: url("../img/watch.png") center center no-repeat;
+}
+
+.slide.ten {
+  width: 80vw;
+  background: #ffff;
+  background-position: fixed;
+  position: relative;
+}
+
+.slide.eleven {
+  width: 800px;
+  position: relative;
+  background: url("../img/man-three.png") center center no-repeat;
+}
+
+.twelv {
+  width: 800px;
+}
+
+.parallax-window {
+  min-height: 100vh;
+  background: transparent;
+}
+
+.img-blck {
+  position: absolute;
+  right: 50px;
+  bottom: 40px;
+  opacity: 0.2;
+}
+
+#particles-three-js {
+  max-width: 1000px;
+}
+
+/*=====  End of Sections ======*/
+
+/*=============================================
+=            contact            =
+=============================================*/
+
+.slide.contact {
+  width: 130vw;
+}
+
+.contact-wrapper {
+  width: 1700px;
+  margin: 0 auto;
+}
+
+.contact-header {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-header-text {
+  margin-left: 50px;
+}
+
+.head-txt {
+  font-size: 75px;
+  font-family: "Gilroy Thin";
+  color: #2e3339;
+}
+
+.btm-txt {
+  margin-top: 15px;
+  font-size: 18px;
+  font-family: "Gilroy Regular";
+  color: #2e3339;
+  font-weight: 400;
+}
+
+
+.contact-item {
+  position: relative;
+  display: flex;
+}
+
+.contact-block img {
+  position: absolute;
+  top: 40px;
+}
+.contact-block {
+ width: 350px;
+}
+
+.contact-item p {
+  padding-top: 65px;
+  padding-left: 30px;
+  font-size: 36px;
+  font-family: "Gilroy Regular";
+  color: #2e3339;
+}
+
+
+.contact-list {
+  margin-left: 50px;
+  margin-top: 30px;
+  width: 350px;
+  list-style-type: none;
+}
+
+
+.contact-list li {
+  padding-top: 30px;
+  position: relative;
+  padding-left: 5px;
+}
+
+.contact-list li::before {
+  position: absolute;
+  content: "";
+  top: 80%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.contact-list li .svg-inline--fa{
+  padding-right: 5px;
+  font-size: 20px;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all .2s ease-in;
+}
+
+
+.contact-list li:hover .svg-inline--fa{
+  opacity: 1;
+  transform: translateX(0);
+
+}
+
+.contact-list li:hover::before {
+  background-color: #fff;
+}
+
+
+
+
+
+.contact-list li a {
+  text-decoration: none;
+  color: #2e3339;
+  font-size: 20px;
+  font-family: "Gilroy Thin";
+  transition: all .2s ease-in;
+  font-weight: 600;
+}
+
+.contact-list li a:hover {
+  font-family: 'Gilroy Regular'
+}
+
+/*=====  End of contact  ======*/
+
+
+
+
+/*=============================================
+=            Slide lion/parallax            =
+=============================================*/
+
+
+.slide.lion {
+   width: 800px;
+   position: relative;
+   background: url(../img/last-lion.png) center center no-repeat;
+}
+
+
+.slide.parallax-laptop {
+   position: relative;
+   width: 1800px;
+}
+
+.parallax-wrapper {
+  width: 1800px;
+}
+
+.parallax-move {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  width: 100%;
+  background-image: url('../img/parallax-image.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+.slide.map {
+  position: relative;
+  width: 600px;
+}
+
+
+.info-map {
+  width: 250px;
+  height: 130px;
+  background: #ffffff;
+  position: absolute;
+  top: 45%;
+  left: 30%;
+
+}
+
+.info-map p {
+  font-size: 16px;
+  color: #2e3339;
+  font-family: 'Gilroy Light';
+  font-weight: 600;
+  padding: 15px;
+}
+
+/*=====  End of Slide lion/parallax  ======*/
+
+
+
+
+/*=============================================
+=          Last  footer block            =
+=============================================*/
+
+
+.slide.footer {
+  position: relative;
+  width: 820px;
+  background: linear-gradient(180deg, rgba(4,33,40,1) 1%, rgba(37,42,63,1) 100%);
+}
+
+.last-footer {
+  margin: 0 auto;
+  margin-top: 150px;
+  width: 650px;
+  height: 650px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-foot {
+  width: 100%;
+}
+.right-foot {
+  width: 100%;
+}
+
+.img-foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  float: right;
+}
+.img-foot img {
+  object-fit: contain;
+}
+.img-foot ul {
+  padding: 40px 0px;
+}
+
+.foot-list {
+  margin-top: 30px;
+  list-style-type: none;
+}
+.foot-list li {
+  padding: 15px;
+}
+
+
+.foot-list li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Gilroy Regular';
+  transition: all .2s ease-in;
+}
+
+.foot-list li a:hover {
+  font-family: 'Gilroy Bold';
+}
+
+
+.foot{
+
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Gilroy Light';
+}
+
+.callback {
+  width: 340px;
+  height: 60px;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+.callback-btn {
+  width: 340px;
+  height: 60px;
+  border: 2px solid #fff;
+  color: #fff;
+  background: inherit;
+  font-family: 'Gilroy Regular';
+  font-size: 18px;
+  margin-top: 30px;
+  transition: all .2s ease-in;
+  cursor: pointer;
+  outline: none;
+}
+
+.callback-btn:hover {
+  border: 2px solid black;
+  background: #42495a;
+  border: 2px solid #42495a;
+  color: #fff;
+  font-family: 'Gilroy Bold';
+}
+
+
+.last-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 650px;
+  margin: 0 auto;
+}
+
+/*=====  End of footer block  ======*/
+
+
+
+
+
+
+/*=============================================
+=            main block animation            =
+=============================================*/
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "proxima-nova-soft", sans-serif;
+  -webkit-user-select: none;
+  overflow: hidden;
+  position: fixed;
+}
+
+.slide.one {
+  position: relative;
+}
+
+.slide.one .vertical-centered-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.slide.one .vertical-centered-box:after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+.slide.one .vertical-centered-box .content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 0;
+}
+
+* {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#particles-background,
+#particles-foreground {
+  left: -51%;
+  top: -51%;
+  width: 202%;
+  height: 202%;
+  -webkit-transform: scale3d(0.5, 0.5, 1);
+  -moz-transform: scale3d(0.5, 0.5, 1);
+  -ms-transform: scale3d(0.5, 0.5, 1);
+  -o-transform: scale3d(0.5, 0.5, 1);
+  transform: scale3d(0.5, 0.5, 1);
+}
+
+#particles-background {
+  background: #2c2d44;
+  background-image: -moz-linear-gradient(45deg, #3f3251 2%, #002025 100%);
+  background-image: -webkit-linear-gradient(45deg, #3f3251 2%, #002025 100%);
+  background-image: linear-gradient(45deg, #3f3251 2%, #002025 100%);
+}
+
+lesshat-selector {
+  -lh-property: 0;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotate {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes rotate {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+
+  100% {
+    -o-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+[not-existing] {
+  zoom: 1;
+}
+
+lesshat-selector {
+  -lh-property: 0;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.25;
+  }
+}
+
+@-moz-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.25;
+  }
+}
+
+@-o-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.25;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.25;
+  }
+}
+
+[not-existing] {
+  zoom: 1;
+}
+
+lesshat-selector {
+  -lh-property: 0;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+[not-existing] {
+  zoom: 1;
+}
+
+/*=====  End of main block animation  ======*/
+
+/*
+
+@media (min-width: 576px) {
+   .container {
+     max-width: 576px;
+   }
+ }
+
+
+@media (min-width: 768px) {
+   .container {
+     max-width: 768px;
+   }
+}
+
+
+@media (min-width: 992px) {
+    .container {
+      max-width: 992px; {
+
+      }
+    }
+ }
+
+
+@media (min-width: 1200px) { ... } */

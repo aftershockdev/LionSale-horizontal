@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "Gilroy Light";
+  src: url("../fonts/Gilroy-Light.woff") format("woff"),
+         url("../fonts/Gilroy-Light.ttf") format("ttf");
+ }
